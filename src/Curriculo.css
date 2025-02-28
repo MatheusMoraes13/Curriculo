@@ -23,16 +23,18 @@ figure.apresentacao-imagem img{
 
 }
 
-.pontosprincipais{
-    
-    h1{
-        border: 5px solid gray;
-    }
+div.pontosprincipais{
 
     text-align: center;
     
     background-color: lightgray;
 
     box-shadow: 1px 1px 5px black;
+
+}
+
+div.pontosprincipais h1{
+
+    border: 5px solid gray;
 
 }
