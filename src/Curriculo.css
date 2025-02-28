@@ -1,16 +1,38 @@
-.apresentacao{
+@charset "UTF-8";
+
+
+div.apresentacao{
 
     text-align: left;
-
-    img{
-        
-    }
     
+}
+
+figure.apresentacao-imagem{
+
+    border: 10px solid rgb(0, 0, 0);
+    
+    box-shadow: 1px 1px 4px black;
+
+}
+
+figure.apresentacao-imagem img{
+
+    width: 100%;
+    
+    height: 100%;
+
 }
 
 .pontosprincipais{
     
+    h1{
+        border: 5px solid gray;
+    }
+
     text-align: center;
+    
     background-color: lightgray;
+
+    box-shadow: 1px 1px 5px black;
 
 }
