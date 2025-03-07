@@ -22,7 +22,7 @@ figure{
 
 figure.apresentacao-imagem{
 
-    box-shadow: 1px 1px 4px 2px black;
+    box-shadow: 1px 1px 10px 2px black;
     border-radius: 50%;
 
 }
@@ -30,6 +30,35 @@ figure.apresentacao-imagem{
 figure.apresentacao-imagem img{
 
     border-radius: 50%;    
+
+}
+
+div.apresentacao-text ul{
+
+    position: absolute;
+    margin: -175px 100px 10px 800px;
+
+}
+
+div.apresentacao-text li{
+
+    margin-bottom: 2px;
+
+}
+
+div.apresentacao-text button{
+
+    height: 30px;
+    width: 80px;
+    background-color: rgb(240, 96, 96);
+    border-radius: 20px;
+
+}
+
+div.apresentacao-text button:hover{
+
+    box-shadow: 1px 1px 6px 2px black;
+    transition: 0.5s;
 
 }
 
