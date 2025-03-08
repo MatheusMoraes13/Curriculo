@@ -10,6 +10,7 @@ div.apresentacao{
 
     display: flex;
     justify-content: space-between;
+    margin-bottom: 15px;
     
 }
 
@@ -29,36 +30,49 @@ figure.apresentacao-imagem{
 
 figure.apresentacao-imagem img{
 
-    border-radius: 50%;    
+    border-radius: 50%;
+    display: flex;
+
+}
+
+div.apresentacao-text{
+
+    padding: 2%;
+    box-shadow: 1px 1px 10px 1px black;
+    padding: 10px;
 
 }
 
 div.apresentacao-text ul{
 
-    position: absolute;
-    margin: -175px 100px 10px 800px;
+    display: flex;
+    justify-content: space-arround;
 
 }
 
 div.apresentacao-text li{
 
-    margin-bottom: 2px;
+    margin-left: 10px;
 
 }
 
 div.apresentacao-text button{
 
-    height: 30px;
-    width: 80px;
-    background-color: rgb(240, 96, 96);
+    box-shadow: 1px 1px 4px black;    
+    height: 100%;
+    width: 120%;
+    color: white;
+    background-color: grey;
+    border: solid 5px grey;
     border-radius: 20px;
 
 }
 
 div.apresentacao-text button:hover{
 
-    box-shadow: 1px 1px 6px 2px black;
+    
     transition: 0.5s;
+    transform: scale(1.1);
 
 }
 
