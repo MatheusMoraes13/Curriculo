@@ -71,23 +71,51 @@ div.apresentacao-text li{
 
 }
 
-div.apresentacao-text button{
+button.Instagram{
 
     box-shadow: 1px 1px 4px black;    
-    height: 100%;
-    width: 120%;
+    height: 35px;
+    width: 98px;
     color: white;
-    background-color: grey;
-    border: solid 5px grey;
+    background-color: rgb(248, 47, 74);
+    border: solid 5px rgb(248, 47, 74);
     border-radius: 20px;
     transition: 0.5s;
-    text-align: justify;
+    text-align: center;
+
+}
+
+button.GitHub{
+
+    box-shadow: 1px 1px 4px black;    
+    height: 35px;
+    width: 98px;
+    color: white;
+    background-color: rgb(25, 25, 36);
+    border: solid 5px rgb(25, 25, 36);
+    border-radius: 20px;
+    transition: 0.5s;
+    text-align: center;
+
+}
+
+button.LinkedIn{
+
+    box-shadow: 1px 1px 4px black;    
+    height: 35px;
+    width: 98px;
+    color: white;
+    background-color: rgb(39, 96, 255);
+    border: solid 5px rgb(39, 96, 255);
+    border-radius: 20px;
+    transition: 0.5s;
+    text-align: center;
 
 }
 
 div.apresentacao-text button:hover{
 
-    transform: scale(1.1);
+    transform: scale(1.2);
 
 }
 
