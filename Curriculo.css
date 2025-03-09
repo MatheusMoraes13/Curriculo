@@ -1,8 +1,17 @@
 @charset "UTF-8";
 
+:root{
+
+    --BGcolor: #1a0002;
+    --BGCaixa: #ffffff;
+    --BGh2pontos: #770105;
+
+}
+
 body{
     
     padding: 5%;
+    background-color: var(--BGcolor);
 
 }
 
@@ -38,7 +47,7 @@ figure.apresentacao-imagem img{
 
 figure.apresentacao-imagem:hover{
 
-    transform: scale(1.2);
+    transform: scale(1.1);
 
 }
 
@@ -46,15 +55,16 @@ div.apresentacao-text{
 
     padding: 2%;
     box-shadow: 1px 1px 10px 1px black;
-    padding-right: 30%;
+    width: 1000px;
     border-radius: 20px;
     transition: 0.5s;
+    background-color: var(--BGCaixa);
 
 }
 
 div.apresentacao-text:hover{
 
-    transform: scale(1.1);
+    transform: scale(1.05);
 
 }
 
@@ -115,14 +125,15 @@ button.LinkedIn{
 
 div.apresentacao-text button:hover{
 
-    transform: scale(1.2);
+    transform: scale(1.1);
 
 }
 
 div.pontosprincipais{
 
+    padding: 5px;
     text-align: center;
-    background-color: rgb(231, 231, 231);
+    background-color: var(--BGCaixa);
     box-shadow: 1px 1px 5px black;
     border-radius: 20px;
     transition: 0.5s;
@@ -131,14 +142,14 @@ div.pontosprincipais{
 
 div.pontosprincipais:hover{
 
-    transform: scale(1.1);
+    transform: scale(1.03);
 
 }
 
 div.pontosprincipais h2{
 
 
-    background-color: rgb(168, 168, 168);
+    background-color: var(--BGh2pontos);
     margin: 10px 30px;
     margin-top: 10px;
     color: white;
