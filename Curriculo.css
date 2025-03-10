@@ -80,45 +80,38 @@ div.apresentacao-text li{
 
 }
 
-button.Instagram{
+div.apresentacao-text button{
 
     box-shadow: 1px 1px 4px black;    
     height: 35px;
     width: 98px;
-    color: white;
-    background-color: rgb(248, 47, 74);
-    border: solid 5px rgb(248, 47, 74);
     border-radius: 20px;
     transition: 0.5s;
     text-align: center;
+    border: solid 5px rgb(248, 47, 74);
+    
+}
+
+button.Instagram{
+
+    
+    color: white;
+    background-color: rgb(248, 47, 74);
+    
 
 }
 
 button.GitHub{
 
-    box-shadow: 1px 1px 4px black;    
-    height: 35px;
-    width: 98px;
     color: white;
     background-color: rgb(25, 25, 36);
-    border: solid 5px rgb(25, 25, 36);
-    border-radius: 20px;
-    transition: 0.5s;
-    text-align: center;
 
 }
 
 button.LinkedIn{
 
-    box-shadow: 1px 1px 4px black;    
-    height: 35px;
-    width: 98px;
     color: white;
     background-color: rgb(39, 96, 255);
-    border: solid 5px rgb(39, 96, 255);
-    border-radius: 20px;
-    transition: 0.5s;
-    text-align: center;
 
 }
 
