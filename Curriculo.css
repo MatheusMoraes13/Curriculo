@@ -123,6 +123,12 @@ div.apresentacao-text button:hover{
 
 }
 
+div.apresentacao-text button:active{
+
+    transform: scale(0.90);
+
+}
+
 div.pontosprincipais{
 
     padding: 5px;
