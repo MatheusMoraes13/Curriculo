@@ -4,7 +4,7 @@
 
     --BGcolor: #e0fffb;
     --BGCaixa: #ffffff;
-    --BGh2pontos: #54cabc;
+    --BGh2pontos: #56cec0;
 
 }
 
@@ -123,8 +123,7 @@ main.pontosprincipais{
 .pontosprincipais h2{
 
     margin-top: 10px;
-    background-color: var(--BGh2pontos);
-    color: white;
+    color: var(--BGh2pontos);
     font-size: xx-large;
     display: inline-block;
     border-radius: 10px;
