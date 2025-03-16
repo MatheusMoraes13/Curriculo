@@ -2,9 +2,9 @@
 
 :root{
 
-    --BGcolor: #e0fffb;
+    --BGcolor: #131a2b;
     --BGCaixa: #ffffff;
-    --BGh2pontos: #56cec0;
+    --BGh2pontos: #01124f;
 
 }
 
@@ -137,7 +137,7 @@ footer{
 
 section {
 
-    border-bottom: 4px solid #c4ede9;
+    border-bottom: 4px solid #566286;
     margin-bottom: 20px;
     border-radius: 1px;
 
