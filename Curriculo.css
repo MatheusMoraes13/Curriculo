@@ -10,9 +10,12 @@
 
 body{
     
-    padding: 5%;
+    margin: 0 auto;
+    padding: 40px;
     background-color: var(--BGcolor);
     font-family: sans-serif;
+    color: #000;
+    max-width: 800px;
 
 }
 
