@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Matheus Moraes - Desenvolvedor Web</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Lato:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <style>
+        /*
+         * CSS Integrado com a Paleta de Cores do Logo
+         */
+
+        /* Variáveis de Cores */
+        :root {
+            --primary-blue: #0A1C3C; /* Azul Marinho do logo */
+            --secondary-red: #E60023; /* Vermelho vibrante do logo */
+            --light-grey: #d6e4ff;
+            --medium-grey: #e9ecef;
+            --dark-text: #222;
+            --light-text: #fff;
+        }
+
+        /* Reset Básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth; /* Para rolagem suave ao clicar nos links internos */
+        }
+
+        body {
+            font-family: 'Lato', sans-serif;
+            line-height: 1.6;
+            color: var(--dark-text);
+            background-color: var(--light-grey);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        h1 { font-size: 3em; }
+        h2 { font-size: 2.2em; }
+        h3 { font-size: 1.6em; }
+
+        p { margin-bottom: 15px; max-width: 800px; margin-left: auto; margin-right: auto; }
+
+        section {
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        /* Cores de Fundo */
+        #hero {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://via.placeholder.com/1920x800/1a2a3a/ffffff?text=Fundo+Abstrato') center/cover no-repeat;
+            color: var(--light-text);
+        }
+        #about, #tech-stack, #contact { background-color: var(--light-text); }
+        #solutions, #projects { background-color: var(--light-grey); }
+        footer { background-color: var(--primary-blue); color: var(--light-text); padding: 40px 0; font-size: 0.9em; }
+
+        /* Botões */
+        .btn {
+            display: inline-block;
+            background-color: var(--secondary-red); /* Botão primário vermelho */
+            color: var(--light-text);
+            padding: 12px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            margin: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #c0001d;
+            transform: translateY(-3px);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            border: 2px solid var(--primary-blue);
+            color: var(--primary-blue);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--primary-blue);
+            color: var(--light-text);
+        }
+
+        /* Hero Section */
+        #hero h1 { font-size: 4em; margin-bottom: 10px; color: var(--light-text); }
+        #hero p { font-size: 1.3em; margin-bottom: 30px; color: #ddd; }
+        #hero .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid var(--secondary-red);
+            object-fit: cover;
+            margin-bottom: 30px;
+        }
+
+        /* Solutions Section */
+        #solutions .solution-grid {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        #solutions .solution-item {
+            background-color: var(--light-text);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            width: calc(33% - 20px);
+            min-width: 300px;
+            text-align: left;
+            transition: transform 0.3s ease;
+        }
+
+        #solutions .solution-item:hover { transform: translateY(-10px); }
+        #solutions .solution-item .icon { font-size: 3em; color: var(--secondary-red); margin-bottom: 15px; display: block; text-align: center; }
+        #solutions .solution-item h3 { font-size: 1.4em; margin-bottom: 10px; text-align: center; color: var(--primary-blue); }
+        #solutions .solution-item p { font-size: 0.95em; color: #555; }
+
+        /* Tech Stack */
+        #tech-stack ul { list-style: none; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; margin-top: 40px; }
+        #tech-stack ul li { background-color: var(--medium-grey); padding: 10px 20px; border-radius: 20px; font-weight: 600; color: var(--dark-text); font-size: 0.9em; }
+
+        /* Projects Section */
+        #projects .project-grid { display: flex; justify-content: center; flex-wrap: wrap; gap: 40px; margin-top: 40px; }
+        #projects .project-card {
+            background-color: var(--light-text);
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            width: calc(50% - 30px);
+            min-width: 350px;
+            overflow: hidden;
+            text-align: left;
+            transition: transform 0.3s ease;
+        }
+        #projects .project-card:hover { transform: translateY(-10px); }
+        #projects .project-card img { width: 100%; height: 250px; object-fit: cover; display: block; }
+        #projects .project-card .project-info { padding: 25px; }
+        #projects .project-card h3 { margin-top: 0; font-size: 1.5em; }
+        #projects .project-card .tech-badges span { display: inline-block; background-color: #E0EFFF; color: var(--primary-blue); padding: 5px 10px; border-radius: 15px; font-size: 0.8em; margin-right: 8px; margin-bottom: 8px; }
+
+        /* Contact Section */
+        #contact form { max-width: 600px; margin: 40px auto 0; text-align: left; }
+        #contact .form-group { margin-bottom: 20px; }
+        #contact .form-group label { display: block; margin-bottom: 8px; font-weight: 600; }
+        #contact .form-group input, #contact .form-group textarea { width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 5px; font-size: 1em; }
+        #contact .form-group textarea { min-height: 120px; resize: vertical; }
+        #contact .contact-links { margin-top: 50px; display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; }
+        #contact .contact-links a { color: var(--primary-blue); text-decoration: none; font-weight: 600; transition: color 0.3s ease; }
+        #contact .contact-links a:hover { color: #051022; }
+        #contact .contact-links a i { margin-right: 8px; font-size: 1.2em; }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            h1 { font-size: 2.5em; }
+            h2 { font-size: 1.8em; }
+            section { padding: 60px 0; }
+            #hero h1 { font-size: 3em; }
+            #hero p { font-size: 1.1em; }
+            .btn { padding: 10px 20px; }
+            #solutions .solution-item, #projects .project-card { width: 90%; min-width: unset; }
+        }
+        @media (max-width: 480px) {
+            h1 { font-size: 2em; }
+            h2 { font-size: 1.6em; }
+            #hero h1 { font-size: 2.5em; }
+            #hero .profile-pic { width: 120px; height: 120px; }
+            #solutions .solution-item, #projects .project-card { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+    <section id="hero">
+        <div class="container">
+            <img src="https://via.placeholder.com/150x150/ffffff/0A1C3C?text=Sua+Foto" alt="Sua Foto de Perfil" class="profile-pic">
+            <h1>Transformando Ideias em Soluções Web Robustas e Escaláveis</h1>
+            <p>Desenvolvedor Full-Stack especializado em Java, React e PostgreSQL, focado em criar aplicações de alta performance que impulsionam o crescimento do seu negócio.</p>
+            <a href="#projects" class="btn">Veja Meus Projetos</a>
+            <a href="#contact" class="btn btn-secondary">Entre em Contato</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>Olá, eu sou [Seu Nome Completo]</h2>
+            <p>Sou um desenvolvedor de software apaixonado por resolver problemas complexos através de código limpo e eficiente. Com sólida experiência no ecossistema Java para o back-end e na construção de interfaces dinâmicas com React, meu objetivo é ir além de simplesmente escrever código: eu construo soluções digitais que geram valor real, otimizam processos e proporcionam uma experiência de usuário excepcional.</p>
+        </div>
+    </section>
+
+    <section id="solutions">
+        <div class="container">
+            <h2>Soluções Sob Medida Para o Seu Negócio</h2>
+            <div class="solution-grid">
+                <div class="solution-item">
+                    <i class="fas fa-code icon"></i>
+                    <h3>Aplicações Web Customizadas</h3>
+                    <p>Crio sistemas completos e sob medida, desde a arquitetura com Java e Spring Boot até interfaces interativas com React, garantindo que a solução atenda perfeitamente às suas necessidades.</p>
+                </div>
+                <div class="solution-item">
+                    <i class="fas fa-rocket icon"></i>
+                    <h3>Modernização de Sistemas</h3>
+                    <p>Analiso e refatoro sistemas legados para arquiteturas modernas e escaláveis, otimizando a performance de bancos de dados PostgreSQL e melhorando a usabilidade da interface.</p>
+                </div>
+                <div class="solution-item">
+                    <i class="fas fa-plug icon"></i>
+                    <h3>APIs RESTful e Integrações</h3>
+                    <p>Desenvolvo APIs robustas e seguras para conectar seus sistemas, aplicativos móveis ou parceiros de negócio, garantindo a integridade e a performance da comunicação entre plataformas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tech-stack">
+        <div class="container">
+            <h2>Minhas Ferramentas de Trabalho</h2>
+            <ul>
+                <li>Java 17+</li><li>Spring Boot</li><li>Spring Security</li><li>React</li><li>JavaScript (ES6+)</li><li>TypeScript</li><li>HTML5 / CSS3</li><li>PostgreSQL</li><li>SQL</li><li>Git</li><li>Docker</li><li>AWS (Básico)</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Projetos que Tive o Prazer de Construir</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/600x250/0A1C3C/ffffff?text=Projeto+Varejo" alt="Screenshot do Projeto de Varejo">
+                    <div class="project-info">
+                        <h3>Sistema de Gerenciamento de Varejo</h3>
+                        <p>Aplicação web para controle de estoque, vendas e relatórios. O desafio foi criar um sistema de alta disponibilidade para processar transações em tempo real.</p>
+                        <div class="tech-badges"><span>Java</span><span>Spring Boot</span><span>React</span><span>PostgreSQL</span><span>Docker</span></div>
+                        <a href="#" class="btn btn-secondary" target="_blank">Ver no GitHub</a>
+                        <a href="#" class="btn" target="_blank">Acessar Demo</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/600x250/E60023/ffffff?text=Projeto+Agendamento" alt="Screenshot do Projeto de Agendamento">
+                    <div class="project-info">
+                        <h3>Plataforma de Agendamento Online</h3>
+                        <p>API RESTful em Java servindo um front-end em React para agendamento de consultas em uma clínica, com integração de pagamentos e notificações.</p>
+                        <div class="tech-badges"><span>Java</span><span>Spring Security</span><span>PostgreSQL</span><span>React</span><span>TypeScript</span></div>
+                        <a href="#" class="btn btn-secondary" target="_blank">Ver no GitHub</a>
+                        <a href="#" class="btn" target="_blank">Acessar Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Vamos Construir Algo Incrível Juntos?</h2>
+            <p>Se você tem uma ideia ou um projeto, adoraria ouvir sobre isso. Entre em contato para discutirmos como minhas habilidades podem ajudar sua empresa a alcançar o próximo nível.</p>
+            <form action="URL_DO_SEU_SERVICO_DE_FORMULARIO" method="POST">
+                <div class="form-group"><label for="name">Nome:</label><input type="text" id="name" name="name" required></div>
+                <div class="form-group"><label for="email">E-mail:</label><input type="email" id="email" name="email" required></div>
+                <div class="form-group"><label for="message">Mensagem:</label><textarea id="message" name="message" required></textarea></div>
+                <button type="submit" class="btn">Enviar Mensagem</button>
+            </form>
+            <div class="contact-links">
+                <a href="mailto:seu.email@exemplo.com"><i class="fas fa-envelope"></i> seu.email@exemplo.com</a>
+                <a href="https://linkedin.com/in/seuperfil" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://github.com/seuperfil" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 [Seu Nome Completo]. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

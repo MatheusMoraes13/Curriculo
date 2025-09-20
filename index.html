@@ -1,126 +1,134 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
-
-    <meta charset="UTF-8"/>
-    <title>Matheus Moraes</title>
-    <link rel="stylesheet" type="text/css" href="Curriculo.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Matheus Moraes - Desenvolvedor Web</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Lato:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
-    <header class="apresentacao">
-
-        
-        <div class="apresentacao-text">
-            <h1>Matheus Teixeira Moraes</h1>
-            
-            <h2>Desenvolvedor</h2>
-            <p>Canaã dos Carajás, Pará<br/>Idade: 20 anos<br/>Nacionalidade: Brasileiro<br/>Email: profissional.moraes2004@gmail.com<br/>Telefone: (94) 99294-1229</p>
-
-            <nav>
-                <ul type="none">
-                    <li>
-                        <a target="_blank" href="https://www.instagram.com/matheusmoraesti/">
-                            <button class="Instagram">
-                                <i class="fab fa-instagram"></i>
-                                Instagram
-                            </button>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a target="_blank" href="https://github.com/MatheusMoraes13">
-                            <button class="GitHub">
-                                <i class="fab fa-github"></i>
-                                GigtHub
-                            </button>
-                        </a>
-                    </li>
-                    
-                    <li>
-                        <a target="_blank" href="https://www.linkedin.com/in/matheus-moraes2004/">
-                            <button class="LinkedIn">
-                                <i class="fab fa-linkedin"></i>
-                                LikedIn
-                            </button>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-
+    <section id="hero">
+        <div class="container">
+            <img src="images\184568368(1).jpg" alt="Sua Foto de Perfil" class="profile-pic">
+            <h1>Transformando Ideias em Soluções Reais e Confiáveis</h1>
+            <p>Desenvolvedor Full-Stack especializado em Java, React e PostgreSQL, focado em criar aplicações de alta performance que impulsionam o crescimento do seu negócio.</p>
+            <a href="#projects" class="btn">Veja Meus Projetos</a>
+            <a href="#contact" class="btn btn-secondary">Entre em Contato</a>
         </div>
+    </section>
 
-        <figure class="apresentacao-imagem">    
-            <img src="images/1737204246432.jpg"/>
-        </figure>
-        
-    </header>
-    
-    <main class="pontosprincipais">
-        <section class="experiencia">
-            <h2>Experiência Profissional</h2>
-            <article>
-                <h3>Técnico em Monitoramento de Redes</h3>
-                <p><strong>Coelho Tecnologia</strong> | Out 2024 - Atual</p>
-                <p>Responsável pelo monitoramento proativo de redes de telecomunicação, abrangendo a geração de relatórios técnicos, troubleshooting de alarmes e a elaboração de documentação detalhada da rede e de processos operacionais. Experiência na utilização de ferramentas como Zabbix, Grafana, OLT Cloud, GLPI, Netbox e SGP.</p>
-            </article>
-            <hr/>
-            <article>
-                <h3>Técnico de Suporte em TI</h3>
-                <p><strong>Scopum Ltda</strong> | Jun 2024 - Set 2024</p>
-                <p>Responsável por manutenção de computadores, montagem de infraestrutura de rede cabeada, montagem de câmeras, instalação de drivers, softwares e assistência para impressoras.</p>
-            </article>
-            <hr/>
-            <article>
-                <h3>Jovem Aprendiz - Suporte Técnico</h3>
-                <p><strong>Revemar Revenda de Veículos Marabá</strong> | Out 2023 - Dez 2023</p>
-                <p>Responsável por dar suporte técnico a computadores empresariais, realizando manutenções e diagnósticos de problemas. 
-Responsável pela organização do ambiente de trabalho.</p>
-            </article>
-        </section>
+    <section id="about">
+        <div class="container">
+            <h2>Olá, eu sou Matheus Moraes</h2>
+            <p>Sou um desenvolvedor de software apaixonado por resolver problemas complexos através de código limpo e eficiente. Com sólida experiência no ecossistema Java para o back-end e na construção de interfaces dinâmicas com React, meu objetivo é ir além de simplesmente escrever código: eu construo soluções digitais que geram valor real, otimizam processos e proporcionam uma experiência de usuário excepcional.</p>
+        </div>
+    </section>
 
-        <section class="educacao">
-            <h2>Formação Acadêmica</h2>
-            <article>
-                <h3>Bacharelado em Sistemas de Informação</h3>
-                <p><strong>Universidade Federal Rural da Amazônia (UFRA)</strong> | Ago 2024 - Ago 2028</p>
-            </article>
-        </section>
+    <section id="solutions">
+        <div class="container">
+            <h2>Soluções Sob Medida Para o Seu Negócio</h2>
+            <div class="solution-grid">
+                <div class="solution-item">
+                    <i class="fas fa-code icon"></i>
+                    <h3>Aplicações Web Customizadas</h3>
+                    <p>Crio sistemas completos e sob medida, desde a arquitetura com Java e Spring Boot até interfaces interativas com React, garantindo que a solução atenda perfeitamente às suas necessidades.</p>
+                </div>
+                <div class="solution-item">
+                    <i class="fas fa-plug icon"></i>
+                    <h3>APIs RESTful e Integrações</h3>
+                    <p>Desenvolvo APIs robustas e seguras para conectar seus sistemas, aplicativos móveis ou parceiros de negócio, garantindo a integridade e a performance da comunicação entre plataformas.</p>
+                </div>
+                <div class="solution-item">
+                    <i class="fas fa-laptop icon"></i>
+                    <h3>Automatização de Processos</h3>
+                    <p>Implemento sistemas que agilisem seus processos diários para que você tenha mais tempo para trarefas que exijam maior atenção.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <section class="habilidades">
-            <h2>Competências</h2>
+    <section id="tech-stack">
+        <div class="container">
+            <h2>Minhas Ferramentas de Trabalho</h2>
             <ul>
-                <li>Linguagens de Programação: C, Java, HTML, CSS</li>
-                <li>Bancos de Dados: SQLite, MySQL, PostgreSQL</li>
-                <li>Versionamento de Código: GIT, GitHub</li>
-                <li>Ferramentas: GTK, Glade, Postman, Swagger, Git</li>
-                <li>Monitoramento de Redes: Zabbix, Grafana, Netbox</li>
-                <li>Infraestrutura de TI e Suporte Técnico</li>
+                <li>Java 21+</li><li>Spring Boot</li><li>Spring Security</li><li>React</li><li>JavaScript (ES6+)</li><li>TypeScript</li><li>HTML5 / CSS3</li><li>PostgreSQL</li><li>SQL</li><li>Git</li><li>Docker</li><li>AWS (Básico)</li>
             </ul>
-        </section>
+        </div>
+    </section>
 
-        <section class="cursos">
-            <h2>Cursos</h2>
-            <article>
-                <h3>Bootcamp DIO Bradesco Cloud Native | 90h</h3>
-                <p>Nesse bootcamp de desenvolvimento web, adquiri conhecimento em Java e Spring Framework, com foco na criação de APIs RESTful. Desenvolvi habilidades em persistência de dados utilizando PostgreSQL e MySQL, além de aprender sobre documentação e teste de APIs com Swagger. O treinamento me capacitou a construir soluções robustas e escaláveis de serviços web.</p>
-            </article>
-        </section>
+    <section id="projects">
+        <div class="container">
+            <h2>Projetos que Tive o Prazer de Construir</h2>
+            
+            <div class="carousel-container">
+                <div class="project-carousel">
+                    <div class="project-card">
+                        <img src="https://via.placeholder.com/600x250/0A1C3C/ffffff?text=Projeto+1" alt="Screenshot do Projeto de Documentação">
+                        <div class="project-info">
+                            <h3>Sistema de Documentação de Circuitos</h3>
+                            <p>Aplicação web para documentar e gerenciar a infraestrutura de redes de uma empresa, otimizando o tempo de resposta a incidentes.</p>
+                            <div class="tech-badges"><span>Java</span><span>Spring Boot</span><span>React</span><span>PostgreSQL</span></div>
+                            <a href="#" class="btn btn-secondary" target="_blank">Ver no GitHub</a>
+                            <a href="#" class="btn" target="_blank">Acessar Demo</a>
+                        </div>
+                    </div>
 
-        <section class="informacoes">
-            <h2>Informações Adicionais</h2>
-            <p><strong>Nível de Inglês:</strong> Básico</p>
-            <p><strong>CNH:</strong> Em processo de retirada</p>
-        </section>
-    </main>
+                    <div class="project-card">
+                        <img src="https://via.placeholder.com/600x250/0A1C3C/ffffff?text=Projeto+2" alt="Screenshot do Projeto de E-mails">
+                        <div class="project-info">
+                            <h3>Sistema de Envio de E-mails Automáticos</h3>
+                            <p>Ferramenta de back-end que se integra a sistemas existentes para automatizar o envio de e-mails transacionais e campanhas de marketing.</p>
+                            <div class="tech-badges"><span>Java</span><span>Spring Boot</span><span>AWS SES</span><span>Docker</span></div>
+                            <a href="#" class="btn btn-secondary" target="_blank">Ver no GitHub</a>
+                            <a href="#" class="btn" target="_blank">Acessar Demo</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <img src="https://via.placeholder.com/600x250/E60023/ffffff?text=Projeto+3" alt="Screenshot do Projeto de Eventos">
+                        <div class="project-info">
+                            <h3>Sistema de Gerenciamento de Eventos</h3>
+                            <p>API RESTful e front-end para uma plataforma de gerenciamento de eventos, incluindo inscrições, pagamentos e emissão de certificados.</p>
+                            <div class="tech-badges"><span>Java</span><span>Spring Security</span><span>React</span><span>TypeScript</span></div>
+                            <a href="#" class="btn btn-secondary" target="_blank">Ver no GitHub</a>
+                            <a href="#" class="btn" target="_blank">Acessar Demo</a>
+                        </div>
+                    </div>
+
+                    </div>
+                <button class="carousel-btn prev" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+                <button class="carousel-btn next" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Vamos Construir Algo Incríve Juntos?</h2>
+            <p>Se você tem uma ideia ou um projeto, adoraria ouvir sobre isso. Entre em contato para discutirmos como minhas habilidades podem ajudar sua empresa a alcançar o próximo nível.</p>
+            <form action="URL_DO_SEU_SERVICO_DE_FORMULARIO" method="POST">
+                <div class="form-group"><label for="name">Nome:</label><input type="text" id="name" name="name" required></div>
+                <div class="form-group"><label for="email">E-mail:</label><input type="email" id="email" name="email" required></div>
+                <div class="form-group"><label for="message">Mensagem:</label><textarea id="message" name="message" required></textarea></div>
+                <button type="submit" class="btn">Enviar Mensagem</button>
+            </form>
+            <div class="contact-links">
+                <a href="mailto:profissional.moraes2004@gmail.com"><i class="fas fa-envelope"></i> profissional.moraes2004@gmail.com</a>
+                <a href="https://linkedin.com/in/matheus-moraes2004" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://github.com/matheusmoraes13" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+        </div>
+    </section>
 
     <footer>
-        <p>&copy; 2025 Matheus Moraes</p>
+        <div class="container">
+            <p>&copy; 2025 Matheus Moraes. Todos os direitos reservados.</p>
+        </div>
     </footer>
-</body>
 
+    <script src="scripts.js"></script>
+</body>
 </html>
